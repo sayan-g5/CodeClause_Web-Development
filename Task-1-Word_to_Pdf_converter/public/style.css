@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: 'Vollkorn', serif;
+    height: 100vh;
+    overflow: hidden;
+}
+
+input,button {
+    font-family: 'Vollkorn', serif;
+    outline: none;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 14px;
+    border: none;
+    margin: 10px;
+    font-size: 16px;
+}
+
+button:hover{
+    opacity: 85%;
+}
+/* #90daf7 */
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    background: rgb(45,86,104);
+    background-image: radial-gradient(circle, #483a89, #3d2e7d, #332372, #281866, #1c0c5b);
+    color: wheat;
+    height: 100vh;
+    justify-content: center;
+}
+
+.title-desc{
+    text-align: center;
+}
+
+.img-tool {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.image-div {
+    text-align: center;
+}
+
+.tools {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 5% auto;
+}
+
+.fileupload{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: rgba(245, 245, 245, 0.301);
+
+}
+
+.filedownload{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#upload-button{
+    cursor: pointer;
+    background-color: #1C0C5B;
+    color: white;
+}
+
+.green {
+    background-color: green ;
+    cursor: pointer;
+}
+
+.gray {
+    background-color: gainsboro;
+    cursor: pointer;
+}
+
+#uploadWordID{
+   color: black;
+   font-size: 16px;
+   width: 58%;
+}
+#userEmailID{
+    width: 80%;
+}
+h1 {
+    font-weight: 900;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-shadow: 2px 3px 0px #898999;
+    line-height: 1.2;
+    color: white;
+}
+h3 {
+    font-weight: 900;
+    font-size: 1.75rem;
+    margin-bottom: 30px;
+    line-height: 1.2;
+    color: white;
+}
+#upload-button:hover {
+    cursor: pointer;
+    color: #1C0C5B;
+    background-color: white;    
+}
+.gray:hover {
+    cursor: pointer;
+    background-color: #1C0C5B;
+    color: white;
+}
+input[type="file"] {
+    display: none;
+}
+.file-upload-style {
+    border: 1px solid black;
+    padding: 5%;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    margin: 3% auto;
+}
+.file-upload-style:hover {
+    cursor: pointer;
+    color: black;
+    background-color: white;
+}

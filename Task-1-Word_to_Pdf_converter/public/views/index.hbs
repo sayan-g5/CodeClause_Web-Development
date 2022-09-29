@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word To PDF</title>
+    <link rel="stylesheet" href="../style.css">
+    <script src="../validation.js" defer ></script>
+</head>
+<body>
+    
+    <div class="main-container">
+
+        <div class="title-desc">
+            <h3>Number of Conversions: <strong id="convNum">{{convNum}}</strong></h3>
+            <h1>Convert Word to Pdf Documents Online for FREE</h1>
+            <h3>My online tool helps you convert word to pdf easily and also receieve the converted word file on your email</h3>
+        </div>
+         
+       <div class="img-tool">
+         <div class="image-div">
+             <img src="../images/image.png" alt="Image" title="word-pdf" style="width: 500px;border-radius: 20px;">
+         </div>
+
+        <div class="tools">
+
+            <h3>Choose file and email</h3>
+           <div>
+                <form class="fileupload" action="/upload" method="POST" enctype="multipart/form-data" >
+                <label for="uploadWordID" class="file-upload-style">
+                    <input type="file" name="uploadWord" value="" id="uploadWordID" > Upload File
+                    </label>
+                    <input type="text" name="userEmail" value="" placeholder="Enter your Email" id="userEmailID">
+                    <input type="submit" id="upload-button">
+                    <!--<button type="submit" id="upload-button">Download</button>-->
+                </form>
+            </div> 
+            <div>
+                <form class="filedownload" action="/download" method="GET" enctype="multipart/form-data" >
+                  {{#if ready}}
+                     <button type="submit" class="green">Download</button>
+                     <p>Mail successfully sent to <strong>{{email}}</strong> </p>
+                     <p>Your file is ready <strong>{{fileName}}</strong> </p>
+                   {{else}}
+                     <button type="submit" class="gray">Download</button>
+                   {{/if}} 
+                </form>
+            </div> 
+        </div>
+        </div>  
+    </div>
+
+</body>
+</html>
