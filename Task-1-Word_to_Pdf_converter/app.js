@@ -92,7 +92,6 @@ function convertToPdf(fileName) {
     });
 }
 
-//Provjeriti da li radi ovo
 function isDirEmptyPromise(folder){
     return new Promise((resolve,reject)=>{
         if(isDirEmpty(folder)){
