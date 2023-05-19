@@ -12,7 +12,7 @@ process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
 const fileData = {
     name: undefined,
     userEmail: undefined,
-    numberOfConversions: 0 //napravi json fajl u ubaci tu vrijednost 
+    numberOfConversions: 0 //na 
 }
 
 const app = express();
